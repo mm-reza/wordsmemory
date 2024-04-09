@@ -107,10 +107,13 @@ function MyQuiz() {
               {frenchWords.map((word, index) => (
                 <div
                   key={index}
-                  draggable="true"
+                  draggable
                   onDragStart={(e) => handleDragStart(e, word)}
                   onDragOver={handleDragOver}
                   onDrop={handleDrop}
+                  onTouchStart={(e) => handleDragStart(e, word)}
+                  onTouchMove={handleDragOver}
+                  onTouchEnd={handleDrop}
                 >
                   <p>{word}</p>
                 </div>
