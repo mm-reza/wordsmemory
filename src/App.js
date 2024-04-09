@@ -1,28 +1,27 @@
-// import logo from './logo.svg';
+
+import React, { useState } from 'react';
 import './App.css';
-import MyQuiz from './components/mobile';
-// import MyQuiz from './components/final';
-// import QuizApp from './components/game';
-// import Darg from './components/drag';
-// import Quiz from './components/quiz';
-// import QuizGame from './components/quizgame';
-// import MyQuiz from './components/myquiz';
-
-
+import MyQuiz from './components/Quiz';
 
 function App() {
+  const [showQuiz, setShowQuiz] = useState(false);
+
+  const handleGoButtonClick = () => {
+    setShowQuiz(true);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Quiz
-        </p>
-
-
-        < MyQuiz/>
-
+        {!showQuiz ? (
+          <div className="splash-container">
+            <h1>Welcome to the Quiz</h1>
+            <button className="go-button" onClick={handleGoButtonClick}>Go</button>
+          </div>
+        ) : (
+          <MyQuiz />
+        )}
       </header>
-
     </div>
   );
 }

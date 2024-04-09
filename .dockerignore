@@ -1,0 +1,28 @@
+# Ignore development files and directories
+node_modules
+.next
+.env.local
+.env.development
+.env.test
+.env.production.local
+.env
+
+# Ignore build-related files
+out
+build
+
+# Ignore unnecessary files
+.DS_Store
+*.log
+npm-debug.log*
+
+# Ignore version control files
+.git
+.gitignore
+
+# testing
+/coverage
+/cypress
+cypress.*
+# jest.*
+*.cy.js
