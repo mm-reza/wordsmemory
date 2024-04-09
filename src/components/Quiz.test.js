@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
-import MyQuiz from './Quiz';
+import MyQuiz from './components/Quiz';
 
 test('renders English and French words correctly', () => {
 
