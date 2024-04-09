@@ -39,6 +39,8 @@ function MyQuiz() {
   const handleDragStart = (e, frenchWord) => {
     e.dataTransfer.setData('text/plain', frenchWord);
     dragIndex.current = frenchWords.indexOf(frenchWord);
+    // Add a class to the dragged element to change its background color
+    e.target.classList.add('dragging');
   };
 
   const handleDragOver = (e) => {
@@ -54,6 +56,14 @@ function MyQuiz() {
     newFrenchWords[dragIndex.current] = newFrenchWords[dragOverIndex.current];
     newFrenchWords[dragOverIndex.current] = temp;
     setFrenchWords(newFrenchWords);
+
+
+      // Remove the class from the dragged element after dropping
+  document.querySelectorAll('.dragging').forEach(element => {
+    element.classList.remove('dragging');
+  });
+    
+    
   };
 
   const handleSubmit = () => {
