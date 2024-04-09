@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import MyQuiz from './components/final';
+import MyQuiz from './components/mobile';
+// import MyQuiz from './components/final';
 // import QuizApp from './components/game';
 // import Darg from './components/drag';
 // import Quiz from './components/quiz';
@@ -18,7 +19,7 @@ function App() {
         </p>
 
 
-        < MyQuiz />
+        < MyQuiz/>
 
       </header>
 
