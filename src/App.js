@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import './App.css';
-import MyQuiz from './components/Quiz';
+import MyQuiz from './components/Quiz.js';
 
 function App() {
   const [showQuiz, setShowQuiz] = useState(false);
