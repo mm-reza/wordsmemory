@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import MyQuiz from './components/final';
+// import QuizApp from './components/game';
+// import Darg from './components/drag';
+// import Quiz from './components/quiz';
+// import QuizGame from './components/quizgame';
+// import MyQuiz from './components/myquiz';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Quiz
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+
+        < MyQuiz />
+
       </header>
+
     </div>
   );
 }
