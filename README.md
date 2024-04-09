@@ -9,6 +9,9 @@
 6. You can retake the quiz by clicking the "Retake Quiz" button.
 
 
+![Demo](demo.gif)
+
+
 ### Features
 - Drag and Drop: Match English words with their - - French translations by dragging and dropping.
 - Scoring: View your score and percentage after submitting the quiz.
